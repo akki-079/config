@@ -1,6 +1,6 @@
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url:  jdbc:mariadb://training-server.cngnkphas7nb.us-east-1.rds.amazonaws.com:3306/ownerdb
-    username: admin
-    password: welcome1
+    url:  ${JDBC_URL:jdbc:mariadb://training-server.cngnkphas7nb.us-east-1.rds.amazonaws.com:3306/visitdb}
+    username: ${DB_USER:admin}
+    password: ${DB_PASSWORD:welcome1}
